@@ -7,12 +7,27 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
+
+  //using librarycardroutes.js as example 
+
+  try {
+    const productData = await Product.findAll({
+      include: [{ Category, Tag }],
+    });
+    res.status(200).json(productData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+  
 });
 
 // get one product
+
+//Using activity 26 libraryCard.js as example for proper routing
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
+
 });
 
 // create new product
