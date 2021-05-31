@@ -18,3 +18,5 @@ module.exports = {
   Tag,
   ProductTag,
 };
+
+// make each category using activity 28 or 26 to arrange the flow to the backend
