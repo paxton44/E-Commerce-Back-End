@@ -15,7 +15,7 @@ Category.init(
       autoIncrement: true
     },
 
-    product_name: {
+    product_category: {
       type: DataTypes.STRING,
       allowNull: false,
     },
