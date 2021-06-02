@@ -4,6 +4,7 @@ const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
+
 //Activity 26, 28 index.js each have a good example of how to lay out belongsTO, belongTOMany tags, Tags belongToMany Products
 
 // Products belongsTo Category
@@ -13,19 +14,20 @@ Product.belongsTo(Category);
 // Categories have many Products
 Category.hasMany(Product, {
   foreignKey: 'category_id',
-  onDelete: 'CASCADE',
 });
 
 
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
-  foreignKey: 'product_tag',
+  through: ProductTag,
+  foreignKey: 'product_id',
 });
 
 
 // Tags belongToMany Products (through ProductTag)
 Product.belongsToMany(Product, {
-  foreignKey: 'product_id',
+  through: ProductTag,
+  foreignKey: 'tag_id',
 });
 
 
