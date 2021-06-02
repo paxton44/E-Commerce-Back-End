@@ -7,7 +7,7 @@ const ProductTag = require('./ProductTag');
 //Activity 26, 28 index.js each have a good example of how to lay out belongsTO, belongTOMany tags, Tags belongToMany Products
 
 // Products belongsTo Category
-Products.belongsTo(Category);
+Product.belongsTo(Category);
 
 
 // Categories have many Products

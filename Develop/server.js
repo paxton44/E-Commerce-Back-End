@@ -14,3 +14,5 @@ app.use(routes);
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
 });
+
+//heres the fix to the error im getting from sequelize https://stackoverflow.com/questions/61301940/sequelize-hasmany-is-working-fine-but-the-inverse-relation-is-not-working/61304209#61304209
