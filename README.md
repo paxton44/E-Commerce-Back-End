@@ -8,10 +8,10 @@ E-Commerce-Back-End is a an app that can manage the back end for an e-commerce w
 
 ## Screenshot
 
-![Alt text](assets/products.png)
-![Alt text](assets/postProducts.png)
-![Alt text](assets/putProducts.png)
-![Alt text](assets/deleteProducts.png)
+![Screenshot](assets/products.png)
+![Screenshot](assets/postProducts.png)
+![Screenshot](assets/putProducts.png)
+![Screenshot](assets/deleteProducts.png)
 
 ## Table of Contents
 
